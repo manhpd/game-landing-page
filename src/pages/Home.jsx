@@ -13,14 +13,16 @@ import SwiperCore, {
 import {
     Welcome,
     Champion,
+    Pet,
     ChampionDetail,
-    Trailer,
     Gameplay,
-    Team
+    Team,
+    Community,
+    RoadMap,
+    Partners
 } from '../components/home-section'
 
 import { championsData } from '../assets/dummy'
-import { queryString } from 'query-string';
 
 SwiperCore.use([Mousewheel, Pagination, EffectFade])
 
@@ -59,13 +61,22 @@ const Home = () => {
                     {({ isActive }) => <Champion isActive={isActive} />}
                 </SwiperSlide>
                 <SwiperSlide>
+                    {({ isActive }) => <Pet isActive={isActive} />}
+                </SwiperSlide>
+                <SwiperSlide>
                     {({ isActive }) => <Gameplay isActive={isActive} />}
                 </SwiperSlide>
                 <SwiperSlide>
-                    {({ isActive }) => <Trailer isActive={isActive} />}
+                    {({ isActive }) => <Team isActive={isActive} />}
                 </SwiperSlide>
                 <SwiperSlide>
-                    {({ isActive }) => <Team isActive={isActive} />}
+                    {({ isActive }) => <RoadMap isActive={isActive} />}
+                </SwiperSlide>
+                <SwiperSlide>
+                    {({ isActive }) => <Partners isActive={isActive} />}
+                </SwiperSlide>
+                <SwiperSlide>
+                    {({ isActive }) => <Community isActive={isActive} />}
                 </SwiperSlide>
             </Swiper>
             {

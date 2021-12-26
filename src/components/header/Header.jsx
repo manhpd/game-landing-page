@@ -41,10 +41,13 @@ export default function Header() {
       >
         <nav className="Nav">
           <a href="/?slide=0">Home</a>
-          <a href="/?slide=1">Heroes</a>
-          <a href="/?slide=2">Gameplay</a>
-          <a href="/?slide=3">Community</a>
+          <a href="/?slide=1">NFT Heroes</a>
+          <a href="/?slide=2">NFT Pet</a>
+          <a href="/?slide=3">Gameplay</a>
           <a href="/?slide=4">Team</a>
+          <a href="/?slide=5">RoadMap</a>
+          <a href="/?slide=6">Partners</a>
+          <a href="/?slide=7">Community</a>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">

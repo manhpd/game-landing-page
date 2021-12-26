@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --watch",
     "serve": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "hover-effect": "^1.1.0",
     "query-string": "^7.0.1",
     "react": "^17.0.0",

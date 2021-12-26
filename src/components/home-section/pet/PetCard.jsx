@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import './champion-card.scss'
+import './pet-card.scss'
 
-const ChampionCard = props => {
+const PetCard = props => {
 
     const cardRef = useRef(null)
 
@@ -37,7 +37,7 @@ const ChampionCard = props => {
     }
 
     return (
-        <div className="champion-card" onClick={onClick} ref={cardRef}>
+        <div className="pet-card" onClick={onClick} ref={cardRef}>
             <div className="frame">
                 <div className="bg-image overlay bg" style={{backgroundImage: `url(${item.bg})`}}></div>
             </div>
@@ -47,4 +47,4 @@ const ChampionCard = props => {
     )
 }
 
-export default ChampionCard
+export default PetCard

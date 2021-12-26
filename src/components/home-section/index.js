@@ -1,14 +1,21 @@
 import Welcome from "./welcome/Welcome"
 import Champion from "./champion/Champion"
 import ChampionDetail from "./champion/ChampionDetail"
-import Trailer from "./trailer/Trailer"
+import Community from "./community/Community"
 import Gameplay from "./gameplay/Gameplay"
 import Team from "./team/Team"
+import Pet from "./pet/Pet"
+import RoadMap from "./road-map/RoadMap"
+import Partners from "./partners/Partners"
+
 export {
     Welcome,
     Champion,
     ChampionDetail,
-    Trailer,
     Gameplay,
-    Team
+    Team,
+    Pet,
+    Community,
+    RoadMap,
+    Partners
 }
