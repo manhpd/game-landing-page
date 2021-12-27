@@ -6,13 +6,6 @@ import { useRef, useEffect } from 'react'
 const ChampionDetail = props => {
 
     const item = props.item
-    const iframeRef = useRef(null)
-
-    useEffect(() => {
-        const height = iframeRef.current.offsetWidth * 9 / 16 + 'px'
-        iframeRef.current.setAttribute('height', height)
-    }, [])
-
     const onClose = () => {
         document.querySelector(`#champ-detail-${props.id}`).classList.remove('active')
         iframeRef.current.setAttribute('src', '')
@@ -38,14 +31,6 @@ const ChampionDetail = props => {
                 <span>Difficulty: <span className="second-color">{item.difficulty}</span></span>
                 <div className="story">
                     {item.description}
-                </div>
-                <span>Champion spotlight</span>
-                <div className="video">
-                    <iframe
-                        title="champion spotlight"
-                        ref={iframeRef}
-                        width="100%"
-                    ></iframe>
                 </div>
             </div>
             <div className="champion-detail__close" onClick={onClose}>

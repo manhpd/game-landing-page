@@ -1,14 +1,9 @@
 @use "../../../scss/" as *;
 
-.credit {
+.gameplay {
     height: 100%;
     overflow: hidden;
     @include flex(center, center);
-
-    video {
-        position: absolute;
-    }
-
     &__content {
         position: relative;
 

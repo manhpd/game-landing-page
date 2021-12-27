@@ -8,13 +8,11 @@ import hoverEffect from 'hover-effect'
 
 import {
     bg1,
-    champAshe,
-    champAhri,
-    champGaren,
-    distortion
+    distortion,
+    hero2, hero3, hero4, hero5, hero6
 } from '../../../assets/images'
 
-const champImgs = [champAshe, champAhri, champGaren]
+const champImgs = [hero2, hero3, hero4, hero5, hero6]
 
 const Welcome = props => {
 

@@ -1,6 +1,9 @@
 @use "../../../scss/" as *;
 @use "sass:math";
 
+.container {
+    width: 200vh;
+}
 .champion {
     &-list {
         .swiper-slide {

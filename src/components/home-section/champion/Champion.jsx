@@ -15,7 +15,13 @@ const Champion = props => {
             contentClassName="overlay"
             bgImage={bg2}
         >
+            
             <div className="container relative">
+                <div className="title">
+                    <h2 className="main-color">NFT Heroes</h2>
+                </div>
+                <br></br>
+                <br></br>
                 <div className="champion-list">
                     <Swiper
                         slidesPerView={'auto'}

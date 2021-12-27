@@ -39,18 +39,20 @@ const swiperOptions = {
 
 
 const Home = () => {
-    const query = new URLSearchParams(window.location.search);
+    const channel = new BroadcastChannel('react_connect');
+    channel.onmessage = res => {
+        if(res.data.to == 'component_2') {
+            slideTo(res.data.index);
+        }
+    }
 
-    const slideIndex = query.get('slide');
-
-    console.log(slideIndex);
     const [swiper, setSwiper] = useState(null);
 
     const slideTo = (index) => {
-        if(swiper && index) 
+        if(swiper && (index || index === 0)) 
         swiper.slideTo(index)
     };
-    slideTo(slideIndex);
+
     return (
         <>
             <Swiper {...swiperOptions} onSwiper={setSwiper}>

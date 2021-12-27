@@ -22,7 +22,7 @@
   .Nav {
     display: grid;
     grid-area: nav;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(9, auto);
     align-items: center;
     justify-items: center;
   }
@@ -30,8 +30,9 @@
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     text-decoration: none;
+    cursor: pointer;
   }
   .Nav a:hover {
     transform: scale(1.1);
