@@ -4,7 +4,7 @@ import ChampionDetail from "./champion/ChampionDetail"
 import Community from "./community/Community"
 import Gameplay from "./gameplay/Gameplay"
 import Team from "./team/Team"
-import Pet from "./pet/Pet"
+import Tokenomic from "./tokenomic/Tokenomic"
 import RoadMap from "./road-map/RoadMap"
 import Partners from "./partners/Partners"
 
@@ -14,7 +14,7 @@ export {
     ChampionDetail,
     Gameplay,
     Team,
-    Pet,
+    Tokenomic,
     Community,
     RoadMap,
     Partners

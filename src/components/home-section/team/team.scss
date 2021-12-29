@@ -1,12 +1,26 @@
-figure {
-    ul {
-        display: flex;
-        justify-content: space-around;
-    }
+.team-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.item {
+    width: calc((100% - 100px)/ 3);
+    margin-right: 50px;
+    margin-bottom: 58px;
+    display: flex;
+    align-items: center;
+
     img {
-        height: 300px;
+        margin-right: 10px;
+        border-radius: 50%;
+        height: 100px;
     }
-    .image-overlay {
-        width: 300px;
+
+    .position {
+        color: #d0a85c;
     }
 }
+

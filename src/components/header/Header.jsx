@@ -1,28 +1,41 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useState, useEffect } from "react";
-import "./Header.css";
+import "./Header.scss";
 import { CSSTransition } from "react-transition-group";
 import { logo } from '../../assets/images'
 
-export default function Header() {
+export default function Header(props) {
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const channel = new BroadcastChannel('react_connect');
-
+  
   const sendMessage = index => {
-    channel.postMessage({to: 'component_2', index: index})
+    props.selectTab(index);
+    channel.postMessage({to: 'component_2', index: index});
+    console.log(props.selectedTab);
   }
+
+  const tabs = [
+    "Home",
+    "NFT",
+    "Tokenomic",
+    "Gameplay",
+    "Team",
+    "RoadMap",
+    "Partners",
+    "Community"
+  ]
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 700px)");
     mediaQuery.addListener(handleMediaQueryChange);
     handleMediaQueryChange(mediaQuery);
-
     return () => {
       mediaQuery.removeListener(handleMediaQueryChange);
     };
   }, []);
 
+ 
   const handleMediaQueryChange = mediaQuery => {
     if (mediaQuery.matches) {
       setIsSmallScreen(true);
@@ -45,14 +58,14 @@ export default function Header() {
         unmountOnExit
       >
         <div className="Nav">
-          <a onClick={() => sendMessage(0)}>Home</a>
-          <a onClick={() => sendMessage(1)}>NFT Heroes</a>
-          <a onClick={() => sendMessage(2)}>NFT Pet</a>
-          <a onClick={() => sendMessage(3)}>Gameplay</a>
-          <a onClick={() => sendMessage(4)}>Team</a>
-          <a onClick={() => sendMessage(5)}>RoadMap</a>
-          <a onClick={() => sendMessage(6)}>Partners</a>
-          <a onClick={() => sendMessage(7)}>Community</a>
+          {
+            tabs.map((tab, i) => {
+              return (
+                <a onClick={() => sendMessage(i)} className={`tab ${props.selectedTab === i ? "active" : ""}`}>{tab}</a>
+              )
+            })
+          }
+          <button href="/"> Whitepaper</button>
         </div>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">

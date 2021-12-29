@@ -13,13 +13,13 @@ import SwiperCore, {
 import {
     Welcome,
     Champion,
-    Pet,
     ChampionDetail,
     Gameplay,
     Team,
     Community,
     RoadMap,
-    Partners
+    Partners,
+    Tokenomic
 } from '../components/home-section'
 
 import { championsData } from '../assets/dummy'
@@ -63,7 +63,7 @@ const Home = () => {
                     {({ isActive }) => <Champion isActive={isActive} />}
                 </SwiperSlide>
                 <SwiperSlide>
-                    {({ isActive }) => <Pet isActive={isActive} />}
+                    {({ isActive }) => <Tokenomic isActive={isActive} />}
                 </SwiperSlide>
                 <SwiperSlide>
                     {({ isActive }) => <Gameplay isActive={isActive} />}

@@ -1,0 +1,69 @@
+import './tokenomic.scss'
+import HomeSection from '../HomeSection'
+import { bg3 } from '../../../assets/images'
+
+const Tokenomic = props => {
+    return (
+        <HomeSection
+            className={`tokenomic ${props.isActive ? 'active' : ''}`}
+            contentClassName="overlay"
+            bgImage={bg3}
+        >
+            <div class="container relative">
+                <div className="title">
+                    <h2 className="main-color">Tokenomic</h2>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div className="title tokenomic-table">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Token Symbol</td>
+                                <td>Her</td>
+                            </tr>
+                            <tr>
+                                <td>Total Supply</td>
+                                <td>1,000,000,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hardcap</td>
+                                <td>$1,695,000</td>
+                            </tr>
+                            <tr>
+                                <td>Seed Sale</td>
+                                <td>$450,000</td>
+                            </tr>
+                            <tr>
+                                <td>Private Sale</td>
+                                <td>$1,020,000</td>
+                            </tr>
+                            <tr>
+                                <td>Public Sale</td>
+                                <td>$225,000</td>
+                            </tr>
+                            <tr>
+                                <td>Seed Sale</td>
+                                <td>$450,000</td>
+                            </tr>
+                            <tr>
+                                <td>Private Sale</td>
+                                <td>$1,020,000</td>
+                            </tr>
+                            <tr>
+                                <td>Public Sale</td>
+                                <td>$225,000</td>
+                            </tr>
+                         
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </HomeSection>
+    )
+}
+
+export default Tokenomic
