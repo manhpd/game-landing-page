@@ -20,8 +20,6 @@ const Champion = props => {
                 <div className="title">
                     <h3 className="main-color">NFT Heroes</h3>
                 </div>
-                <br></br>
-                <br></br>
                 <div className="champion-list">
                     <Swiper
                         slidesPerView={'auto'}
@@ -42,8 +40,6 @@ const Champion = props => {
                 <div className="title">
                     <h3 className="main-color">NFT Pets</h3>
                 </div>
-                <br></br>
-                <br></br>
                 <div className="champion-list">
                     <Swiper
                         slidesPerView={'auto'}
