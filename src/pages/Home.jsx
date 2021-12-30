@@ -3,7 +3,7 @@ import {
     Swiper,
     SwiperSlide
 } from 'swiper/react'
-
+import './home.scss'
 import SwiperCore, {
     EffectFade,
     Mousewheel,
@@ -51,7 +51,7 @@ const Home = (props) => {
 
     const slideTo = (index) => {
         if(swiper && (index || index === 0)) {
-            swiper.slideTo(index, 50, false)
+            swiper.slideTo(index)
         }
     };
 
