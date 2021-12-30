@@ -38,7 +38,8 @@ const swiperOptions = {
 
 
 
-const Home = () => {
+const Home = (props) => {
+
     const channel = new BroadcastChannel('react_connect');
     channel.onmessage = res => {
         if(res.data.to == 'component_2') {
@@ -49,13 +50,18 @@ const Home = () => {
     const [swiper, setSwiper] = useState(null);
 
     const slideTo = (index) => {
-        if(swiper && (index || index === 0)) 
-        swiper.slideTo(index)
+        if(swiper && (index || index === 0)) {
+            swiper.slideTo(index, 100, false)
+        }
     };
 
     return (
         <>
-            <Swiper {...swiperOptions} onSwiper={setSwiper}>
+            <Swiper {...swiperOptions} onSwiper={setSwiper} onSlideChange={(res) => {
+                    if(props.selectedTab !== res.activeIndex) {
+                        props.selectTab(res.activeIndex)
+                    }
+                }}>
                 <SwiperSlide>
                     {({ isActive }) => <Welcome isActive={isActive} />}
                 </SwiperSlide>

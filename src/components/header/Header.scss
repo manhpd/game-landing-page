@@ -14,9 +14,19 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
+  .banner {
+    position: absolute;
+    top: -2vh;
+    left: -20px;
+    height: 199px;
+  }
   .Logo {
     grid-area: logo;
-    height: 70px;
+    height: 135px;
+    z-index: 1000;
+    margin-left: 4px;
+    text-shadow: 2px 2px;
+    position: absolute;
   }
   
   .Nav {
@@ -28,6 +38,7 @@
     .active {
       color : #d0a85c;
     }
+    min-height: 75px;
   }
   
   .Nav a {

@@ -3,16 +3,15 @@
 .gameplay {
     height: 100%;
     overflow: hidden;
-    @include flex(center, center);
-    &__content {
-        position: relative;
+    .container {
+        width: 300vw;
+        margin-top: 60px;
+    }
+    .video {
+        margin: 1rem 0;
+    }
 
-        .title {
-            text-align: center;
-        }
-
-        .btns > * ~ * {
-            margin-left: 1rem;
-        }
+    iframe {
+        width: 60%;
     }
 }

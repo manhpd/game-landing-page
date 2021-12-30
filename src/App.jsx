@@ -16,7 +16,6 @@ export class App extends React.Component{
   }
 
   selectTab(index) {
-    console.log(index);
     this.setState({selectedTab: index});
   }
 
@@ -24,7 +23,7 @@ export class App extends React.Component{
     return (
       <div className="App">
         <Header selectedTab={this.state.selectedTab} selectTab={this.selectTab.bind(this)}/>
-        <Home/>
+        <Home selectedTab={this.state.selectedTab} selectTab={this.selectTab.bind(this)}/>
       </div>
     )
   }

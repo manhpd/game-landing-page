@@ -1,4 +1,6 @@
 import logo from './images/logo.png'
+import banner from './images/banner.png'
+
 import bg1 from './images/bg-1.jpg'
 import bg2 from './images/bg-2.jpg'
 import bg3 from './images/bg-3.jpg'
@@ -18,13 +20,17 @@ import pet1 from './images/pets/10.png'
 import pet2 from './images/pets/11.png'
 import pet3 from './images/pets/12.png'
 
-import hero1 from './images/hero1.png'
-import hero2 from './images/hero2.png'
-import hero3 from './images/hero3.png'
+import hero1 from './images/heroes/hero-01.png'
+import hero2 from './images/heroes/hero-02.png'
+import hero3 from './images/heroes/hero-03.png'
 
-import hero4 from './images/heroes/1-phuthuy.png'
-import hero5 from './images/heroes/2-cungthu.png'
-import hero6 from './images/heroes/ninja.png'
+import hero4 from './images/heroes/hero-04.png'
+import hero5 from './images/heroes/hero-05.png'
+import hero6 from './images/heroes/hero-06.png'
+
+import hero7 from './images/heroes/hero-07.png'
+import hero8 from './images/heroes/hero-08.png'
+import hero9 from './images/heroes/hero-09.png'
 
 import closeIcon from './images/two-sword.png'
 
@@ -32,6 +38,7 @@ import trailerImg from './images/hero1.png'
 
 export {
     logo,
+    banner,
     bg1,
     bg2,
     bg3,

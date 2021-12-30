@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import { CSSTransition } from "react-transition-group";
-import { logo } from '../../assets/images'
+import { logo, banner } from '../../assets/images'
 
 export default function Header(props) {
   const [isNavVisible, setNavVisibility] = useState(false);
@@ -12,8 +12,14 @@ export default function Header(props) {
   const sendMessage = index => {
     props.selectTab(index);
     channel.postMessage({to: 'component_2', index: index});
-    console.log(props.selectedTab);
   }
+
+  channel.onmessage = res => {
+    console.log(res.data.to, props.selectedTab, res.data.index)
+    if(res.data.to == 'component_1' && props.selectedTab !== res.data.index) {
+      props.selectTab(res.data.index);
+    }
+}
 
   const tabs = [
     "Home",
@@ -51,6 +57,7 @@ export default function Header(props) {
   return (
     <header className="Header">
       <img src={logo} className="Logo" alt="logo" />
+      <img src={banner} className="banner" alt="banner" />
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
         timeout={350}

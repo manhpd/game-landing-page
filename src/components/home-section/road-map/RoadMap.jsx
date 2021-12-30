@@ -1,8 +1,9 @@
 import './roadmap.scss'
 import HomeSection from '../HomeSection'
+import { bg3, hero2, hero5, hero1, hero3, hero4, hero6 } from '../../../assets/images'
 
-import { bg3, blog1, blog2, blog3 } from '../../../assets/images'
 const RoadMap = props => {
+
     return (
         <HomeSection
             className={`roadmap ${props.isActive ? 'active' : ''}`}
@@ -12,56 +13,51 @@ const RoadMap = props => {
                 <div className="title">
                     <h2 className="main-color">Road Map</h2>
                 </div>
-
-                <br></br>
-                <br></br>
-                <br></br>
-
-                <ul class="timeline">
-                    <li >
-                        <h2>Kick Start</h2>
-                        Advisor Outreach,
-                        Whitepaper & pitching deck release,
-                        PR Collaborations,
-                        Community Growth,
-                        Private sale,
-                        IDO,
-                        Conceptualization Game,
-                        Mechanics Characters,
-                        Design Play Flow & Battle Mechanism,
-                        NFT Smart Contract,
-                        Website Launch
-                    </li>
-                    <li>
-                        <h2>Kick Start</h2>
-                        Advisor Outreach,
-                        Whitepaper & pitching deck release,
-                        PR Collaborations,
-                        Community Growth,
-                        Private sale,
-                        IDO,
-                        Conceptualization Game,
-                        Mechanics Characters,
-                        Design Play Flow & Battle Mechanism,
-                        NFT Smart Contract,
-                        Website Launch
-                    </li>
-                    <li> <h2>Kick Start</h2>
-                        Advisor Outreach,
-                        Whitepaper & pitching deck release,
-                        PR Collaborations,
-                        Community Growth,
-                        Private sale,
-                        IDO,
-                        Conceptualization Game,
-                        Mechanics Characters,
-                        Design Play Flow & Battle Mechanism,
-                        NFT Smart Contract,
-                        Website Launch</li>
-                </ul>
+                <section class="ps-timeline-sec">
+                    <div class="container">
+                        <ol class="ps-timeline">
+                            <li>
+                                <div class="img-handler-top">
+                                    <img src={hero3} alt="" />
+                                </div>
+                                <div class="ps-bot">
+                                    <p>Do you have a recent injury or long term pain?</p>
+                                </div>
+                                <span class="ps-sp-top">01</span>
+                            </li>
+                            <li>
+                                <div class="img-handler-bot">
+                                    <img src={hero5} alt="" />
+                                </div>
+                                <div class="ps-top">
+                                    <p>Have you tried Physiotherapy, Chiropractor or your GP without the pain free results?</p>
+                                </div>
+                                <span class="ps-sp-bot">02</span>
+                            </li>
+                            <li>
+                                <div class="img-handler-top">
+                                    <img src={hero4} alt="" />
+                                </div>
+                                <div class="ps-bot">
+                                    <p>Let Physology assess and treat your pain with our trusted revolusionary approach.</p>
+                                </div>
+                                <span class="ps-sp-top">03</span>
+                            </li>
+                            <li>
+                                <div class="img-handler-bot">
+                                    <img src={hero6} alt="" />
+                                </div>
+                                <div class="ps-top">
+                                    <p>Join our happy family of pain free clients.</p>
+                                </div>
+                                <span class="ps-sp-bot">04</span>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
             </div>
 
-        </HomeSection>
+        </HomeSection >
     )
 }
 
