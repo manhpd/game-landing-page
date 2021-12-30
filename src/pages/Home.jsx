@@ -51,7 +51,7 @@ const Home = (props) => {
 
     const slideTo = (index) => {
         if(swiper && (index || index === 0)) {
-            swiper.slideTo(index, 100, false)
+            swiper.slideTo(index, 50, false)
         }
     };
 

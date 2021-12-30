@@ -2,7 +2,11 @@
 @use "sass:math";
 
 .tokenomic-table {
-    width: 50%;
     background: #30281cb0;
     padding: 40px;
+}
+
+
+.tokenomic-hero {
+    height: 50vh;
 }
