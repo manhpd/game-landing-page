@@ -10,20 +10,24 @@ export class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 0
+      selectedTab: 0,
+      isNftVisited: false
     };
     this.selectTab = this.selectTab.bind(this);
   }
 
   selectTab(index) {
     this.setState({selectedTab: index});
+    if(this.state.selectedTab === 1) {
+      this.setState({isNftVisited: true})
+    }
   }
 
   render () {
     return (
       <div className="App">
         <Header selectedTab={this.state.selectedTab} selectTab={this.selectTab.bind(this)}/>
-        <Home selectedTab={this.state.selectedTab} selectTab={this.selectTab.bind(this)}/>
+        <Home isNftVisited={this.state.isNftVisited} selectedTab={this.state.selectedTab} selectTab={this.selectTab.bind(this)}/>
       </div>
     )
   }

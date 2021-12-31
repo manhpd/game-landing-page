@@ -17,16 +17,28 @@
         }
     }
 
-    &.active &-list {
+    &.active &-list  {
         .swiper-slide {
             transform: translateX(0);
             opacity: 1;
 
-            @for $i from 1 through 10 {
-                &:nth-child(#{$i}) {
-                    transition-delay: #{math.div($i, 2)}s;
+            &.not-visit {
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: #{math.div($i, 2)}s;
+                    }
+                }
+            }
+
+            &.visit {
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: 0s;
+                    }
                 }
             }
         }
     }
+
+
 }

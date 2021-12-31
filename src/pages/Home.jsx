@@ -67,7 +67,7 @@ const Home = (props) => {
                     {({ isActive }) => <Welcome isActive={isActive} />}
                 </SwiperSlide>
                 <SwiperSlide>
-                    {({ isActive }) => <Champion isActive={isActive} />}
+                    {({ isActive }) => <Champion isActive={isActive} isVisit={props.isNftVisited} />}
                 </SwiperSlide>
                 <SwiperSlide>
                     {({ isActive }) => <Tokenomic isActive={isActive} />}

@@ -30,7 +30,7 @@ const Champion = props => {
                     >
                         {
                             championsData.map((item, index) => (
-                                <SwiperSlide key={index}>
+                                <SwiperSlide key={index} className={props.isVisit ? "visit" : "not-visit"}>
                                     <ChampionCard item={item} id={index}/>
                                 </SwiperSlide>
                             ))
@@ -50,7 +50,7 @@ const Champion = props => {
                     >
                         {
                             petsData.map((item, index) => (
-                                <SwiperSlide key={index}>
+                                <SwiperSlide key={index} className={props.isVisit ? "visit" : "not-visit"}> 
                                     <ChampionCard item={item} id={index}/>
                                 </SwiperSlide>
                             ))
