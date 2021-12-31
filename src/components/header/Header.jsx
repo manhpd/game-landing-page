@@ -57,6 +57,8 @@ export default function Header(props) {
     <header className="Header">
       <img src={logo} className="Logo" alt="logo" />
       <img src={banner} className="banner" alt="banner" />
+      
+     
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
         timeout={350}

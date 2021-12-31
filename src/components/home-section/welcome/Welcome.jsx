@@ -20,7 +20,7 @@ import {
     hero2, hero3, hero4, hero5, hero6
 } from '../../../assets/images'
 
-SwiperCore.use([Autoplay, EffectFade])
+SwiperCore.use([Autoplay])
 
 const champImgs = [hero2, hero3, hero4, hero5, hero6]
 

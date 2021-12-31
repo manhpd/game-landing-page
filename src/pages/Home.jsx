@@ -33,6 +33,7 @@ const swiperOptions = {
     spaceBetween: 0,
     mousewheel: true,
     pagination: true,
+    allowTouchMove: false,
     effect: 'fade',
     speed: 1000
 }

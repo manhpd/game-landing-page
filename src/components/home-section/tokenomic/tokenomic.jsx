@@ -20,43 +20,53 @@ const Tokenomic = props => {
                     <div class="col-md-6">
                         <div className="title tokenomic-table">
                             <table class="table">
+                                
                                 <tbody>
                                     <tr>
                                         <td>Token Symbol</td>
                                         <td>Her</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Total Supply</td>
                                         <td>1,000,000,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
 
                                     <tr>
                                         <td>Hardcap</td>
                                         <td>$1,695,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Seed Sale</td>
                                         <td>$450,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Private Sale</td>
                                         <td>$1,020,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Public Sale</td>
                                         <td>$225,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Seed Sale</td>
                                         <td>$450,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Private Sale</td>
                                         <td>$1,020,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
                                     <tr>
                                         <td>Public Sale</td>
                                         <td>$225,000</td>
+                                        <td>description abcxyz</td>
                                     </tr>
 
                                 </tbody>
