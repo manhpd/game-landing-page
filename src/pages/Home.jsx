@@ -7,7 +7,8 @@ import './home.scss'
 import SwiperCore, {
     EffectFade,
     Mousewheel,
-    Pagination
+    Pagination,
+  
 } from 'swiper'
 
 import {

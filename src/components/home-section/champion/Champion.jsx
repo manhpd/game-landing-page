@@ -26,6 +26,7 @@ const Champion = props => {
                         spaceBetween={0}
                         grabCursor={true}
                         nested={true}
+                        speed={0}
                     >
                         {
                             championsData.map((item, index) => (

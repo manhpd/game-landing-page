@@ -7,7 +7,6 @@
 
     &__info,
     &__img {
-        width: 50%;
         height: 100%;
     }
 
@@ -41,4 +40,12 @@
             }
         }
     }
-}
+
+    .swiper {
+        height: 50vh;
+        float: right;
+    }
+    .img-welcome{
+        height: 100%
+    }
+} 
