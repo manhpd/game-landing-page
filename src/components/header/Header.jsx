@@ -15,7 +15,6 @@ export default function Header(props) {
   }
 
   channel.onmessage = res => {
-    console.log(res.data.to, props.selectedTab, res.data.index)
     if(res.data.to == 'component_1' && props.selectedTab !== res.data.index) {
       props.selectTab(res.data.index);
     }

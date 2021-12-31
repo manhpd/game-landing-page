@@ -5,10 +5,6 @@ import bg1 from './images/bg-1.jpg'
 import bg2 from './images/bg-2.jpg'
 import bg3 from './images/bg-3.jpg'
 
-import blog1 from './images/blog-1.jpg'
-import blog2 from './images/blog-2.jpg'
-import blog3 from './images/blog-3.jpg'
-
 import team1 from './images/team-05.jpg'
 import team2 from './images/team-06.jpg'
 import team3 from './images/team-07.jpg'
@@ -19,6 +15,10 @@ import distortion from './images/distortion.png'
 import pet1 from './images/pets/10.png'
 import pet2 from './images/pets/11.png'
 import pet3 from './images/pets/12.png'
+
+import pet4 from './images/pets/01.png'
+import pet5 from './images/pets/02.png'
+import pet6 from './images/pets/03.png'
 
 import hero1 from './images/heroes/hero-01.png'
 import hero2 from './images/heroes/hero-02.png'
@@ -57,9 +57,9 @@ export {
     pet1,
     pet2,
     pet3,
-    blog1,
-    blog2,
-    blog3,
+    pet4,
+    pet5,
+    pet6,
     team1,
     team2,
     team3
